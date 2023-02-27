@@ -24,15 +24,28 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
     <style>
-        #email-body > section.green-section.wow.fadeInUp{margin-top:0px !important;}
-section#sec1 {
-    margin-top: 150px;
-  
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap");
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
-        section#sec2 {
-    margin-top: -70px !important;
-            /*  margin-top: 0px !important;*/
+
+html {
+  --selected-background-color: rgba(219, 69, 55, 0.1);
+  --selected-items-color:rgb(219, 68, 55);
+  --svg-current-color:#909191;
+  overflow: hidden;
 }
+
+h1,
+h2 {
+  margin: 0;
+}
+
 .section-header, .item-wrapper label, .button-wrapper, .tab-bar {
   padding-left: 20px;
   padding-right: 20px;
@@ -64,14 +77,11 @@ button {
 }
 
 .gmail-page {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    overflow: hidden;
-    padding-right: 25px;
-    padding-left: 25px;
-    margin-right: auto;
-    margin-left: auto;}
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  overflow: hidden;
+}
 
 .page-content {
   display: flex;
@@ -94,16 +104,13 @@ button {
   justify-content: space-between;
   width: 44%;
 }
-p.mail-title {
-    margin: 0 !important;
-}
+
 .search-area {
   width: 400px;
   height: 34px;
   background-color: #f7f8f9;
   border-radius: 6px;
   padding: 1px;
-    pointer-events: none;
 }
 .search-area input {
   flex: 1;
@@ -608,7 +615,8 @@ label span {
 </head>
 
 <body id="email-body">
-    <!-- HEADER  -->
+    
+     <!-- HEADER  -->
      <header class="main-header">
         <div class="container">
             <div class="logo">
@@ -670,11 +678,16 @@ label span {
         </div>
     </header>
     <!-- HERO SECTION  -->
-   <section id="sec1">
+    <div class="site-hero_2">
+        <div class="page-title"> </div>
+    </div>
+    <!-- HERO SECTION  -->
+
+    <section style="border:2px solid red;">
         <!--<h2>Choosing an Apple</h2>-->
         <div class="email-container">
         </div></section>
-    <section id="sec2">
+    <section>
            <div class="gmail-page">
                
     <div class="tab-bar">
@@ -706,7 +719,7 @@ label span {
               />
             </defs>
           </svg>
-          <p class="mail-title">Gmail</p>
+          <p>Gmail</p>
           </div></div>
            <div class="search-area">
           <button >
@@ -750,7 +763,7 @@ label span {
             <div class="row">
                 <div class="col-sm-3 col-md-2">
                     <div class="email-btn-group">
-                        <button type="button" class="email-btn btn-primary dropdown-toggle"> Mail <span class="caret"></span> </button>
+                        <button type="button" class="email-btn btn-primary dropdown-toggle" data-toggle="dropdown"> Mail <span class="caret"></span> </button>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="#">Mail</a></li>
                             <li><a href="#">Contacts</a></li>
@@ -767,7 +780,7 @@ label span {
                                     <input type="checkbox" id="case"> </label>
                             </div>
                         </div>
-                        <button type="button" class="email-btn email-btn-default dropdown-toggle" > <span class="caret"></span><span class="sr-only">Toggle Dropdown</span> </button>
+                        <button type="button" class="email-btn email-btn-default dropdown-toggle" data-toggle="dropdown"> <span class="caret"></span><span class="sr-only">Toggle Dropdown</span> </button>
                         <ul class="dropdown-menu" role="menu">
                             <li><a href="#">All</a></li>
                             <li><a href="#">None</a></li>
@@ -780,9 +793,11 @@ label span {
                     <div type="button" class="email-btn email-btn-default" data-toggle="tooltip" title="Refresh"> <span class="glyphicon glyphicon-refresh"></span></div>
                     <!-- Single button -->
                     <div class="email-btn-group">
-                        <button type="button" class="email-btn email-btn-default dropdown-toggle" > More <span class="caret"></span> </button>
+                        <button type="button" class="email-btn email-btn-default dropdown-toggle" data-toggle="dropdown"> More <span class="caret"></span> </button>
                         <ul class="dropdown-menu" role="menu">
-                          
+                            <li><a href="#">Mark all as read</a></li>
+                            <li class="divider"></li>
+                            <li class="text-center"><small class="text-muted">Select messages to see more actions</small></li>
                         </ul>
                     </div>
                     <div class="pull-right"> <span class="text-muted"><b>1</b>–<b>32</b> of <b>32</b></span>
@@ -799,10 +814,10 @@ label span {
                     <hr class="hr2">
                     <ul class="nav bs nav-stacked">
                         <li class="active"><a href="#" class="emailstyle"><span class="badge pull-right">32</span> Inbox </a> </li>
-                        <li><a href="#">Starred</a></li>
-                        <li><a href="#">Important</a></li>
-                        <li><a href="#">Sent Mail</a></li>
-                        <li><a href="#"><span class="badge pull-right">3</span>Drafts</a></li>
+                        <li><a href="http://www.jquery2dotnet.com">Starred</a></li>
+                        <li><a href="http://www.jquery2dotnet.com">Important</a></li>
+                        <li><a href="http://www.jquery2dotnet.com">Sent Mail</a></li>
+                        <li><a href="http://www.jquery2dotnet.com"><span class="badge pull-right">3</span>Drafts</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-9 col-md-10">
@@ -1116,17 +1131,18 @@ label span {
             </div>
         </div>
     </section>
-   <!-- Contact -->
-    <section class="green-section wow fadeInUp" style="padding:50px 0">
+    <!-- Contact -->
+    <!-- Contact -->
+    <section class="green-section note wow fadeInUp" style="padding:50px 0">
         <div class="container">
             <div class="col-md-6 col-sm-12">
-                <div class="row"> <span class="white-text quote montserrat-text uppercase" style="font-size:30px;display:block; font-weight:700;">
+                <div class="row"> <span class="white-text montserrat-text uppercase" style="font-size:30px;display:block; font-weight:700;">
 						Need an ambitious designer?<br><p style="font-family: 'Oxygen', sans-serif; font-weight:400; color:#FFFFFF;"> let's work together!</p>
 					</span> <a href="assets/img/Mae_Miller_Resume_2016.pdf" target="_blank" class="btn white" style="margin-top:5px"><span style="margin-bottom:60px; padding-bottom:10px;">resume</span></a> </div>
             </div>
             <div class="col-md-6 col-sm-12">
                 <div class="row">
-                    <div class="white-section note" style="padding:20px"> <span class="montserrat-text uppercase" style="font-size:24px">Let's Get Connected</span>
+                    <div class="white-section" style="padding:20px"> <span class="montserrat-text uppercase" style="font-size:24px">Let's Get Connected</span>
                         <p> What the helvetica, drop your email below... </p>
                         <form action="//formspree.io/maemillergraphics@gmail.com" method="post">
                             <div class="input_1">
@@ -1143,14 +1159,10 @@ label span {
                     </div>
                 </div>
             </div>
-        </div>
+        </div></div>
     </section>
-    
-    
-    
-    
-    
 
+    
     
     <!-- FOOTER -->
     <footer class="main-footer wow fadeInUp">
@@ -1169,7 +1181,7 @@ label span {
             </div>
             <div class="col-md-4 col-sm-12" style="text-align:right">
                 <div class="row">
-                    <div class="uppercase gray-text"> &copy;2016 - 2022. all rights reserved.
+                    <div class="uppercase gray-text"> &copy;2016. all rights reserved.
                         <br>Student and Freelance Design Work. </div>
                     <ul class="social-icons" style="margin-top:30px;float:right">
                         <li><a href="https://twitter.com/Maetrickz"><i class="fa fa-twitter"></i></a></li>
@@ -1182,21 +1194,6 @@ label span {
                 </div>
             </div>
         </div>
-       <!-- <script>
-            (function (i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date();
-                a = s.createElement(o)
-                    , m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-            ga('create', 'UA-74854528-1', 'auto');
-            ga('send', 'pageview');
-        </script>-->
     </footer>
     <!-- SCRIPTS -->
    

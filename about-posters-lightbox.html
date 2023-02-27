@@ -17,21 +17,56 @@
 	<link rel="stylesheet" href="assets/css/style.css">
    <link rel="stylesheet" href="assets/css/style-lightbox.css">
   <link rel="stylesheet" href="assets/css/style-portfolio.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+ 
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,800,900,100,700italic,500italic,400italic,800italic,300italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
 
     
   
 <style>
+    .container{padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+    body > section:nth-child(2){margin-top:0px !important; display:none;}
+    body > section:nth-child(3){margin-top:50px !important;}
+  header.main-header {
+  height: auto;
+    width: 100%;
+    position: inherit;
+    /*top: 0;
+    left: 0;
+    z-index: 9;*/
+}
+    header.main-header .logo-poster {
+    float: left;
+    height: 100px;
+    line-height: 100px;
+}
+   /* .photo-gallery .item {
+        filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.1));}*/
+    body > section > div > div > div > div > div.item.box{
+        margin:20px !important;
+    }
+    html {
+    background-color: #fff;
+}
     .conatiner {
     width: 100%;
     height: auto;
 
 }
     
-    body{background: #112 url(//images.weserv.nl/?url=i.imgur.com/6QJjYMe.jpg)  center no-repeat;
-  background-size:cover;
-  margin:0; opacity: 0.5;}
+    body{
+           background: #663366 url(https://www.toptal.com/designers/subtlepatterns/uploads/brickwall.png);
+    background-size: inherit;
+    background-repeat: round;
+    background-blend-mode: hard-light;
+    margin: 0;}
     .photo-gallery{background-color: transparent !important;background-color: rgba(255,255,255,0.6);}
     
     :root {
@@ -41,30 +76,38 @@
   --tape-edge-gray: #b7b49d;
   --transparent: rgba(255, 255, 255, 0);
 }
-    
     .poster1 {
-/*  width: 300px;
-  padding: 7%;*/
+    position: relative;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 0 3px 12px rgb(0 0 0 / 20%);
+    filter: none;
+}
+   /* .poster1:hover {
+
   position: relative;
   box-sizing: border-box;
   background-color: #fff;
   box-shadow: 0 3px 12px rgba(0,0,0,0.2);
   filter: saturate(70%) contrast(85%);
-}.poster1:before,
+}*/
+    
+    .poster1:before,
 .poster1:after {
   content: '';
   width: 100%;
   left: 0;
   position: absolute;
+     pointer-events: none;
 }
-.poster1:before {
+/*.poster1:before {
   height: 4%;
   bottom: -4%;
   background-repeat: no-repeat;
   background-image: linear-gradient(177deg, rgba(0,0,0,0.22) 10%, transparent 50%), linear-gradient(-177deg, rgba(0,0,0,0.22) 10%, transparent 50%);
   background-size: 49% 100%;
   background-position: 2% 0, 98% 0;
-}
+}*/
 .poster1:after {
   height: 100%;
   top: 0;
@@ -85,10 +128,12 @@
   height: 4vmin;
   top: -5px;
   width: 110%;
+    left: -15px;
   background-color: var(--tape-gray);
   border-right: 1px dotted var(--tape-edge-gray);
   border-left: 1px dotted var(--tape-edge-gray);
   opacity: 0.5;
+    text-shadow: #fff;
 }
 
 .tape-section:first-of-type {
@@ -144,7 +189,7 @@
 <body class="animsition">
   <header class="main-header">
         <div class="container">
-            <div class="logo">
+            <div class="logo-poster">
                 <a href="index.html"><img src="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/--branding/ashleymae-logo.svg" alt="logo"></a>
             </div>
             <div class="menu">
@@ -204,14 +249,15 @@
     </header>
 
 	<!-- HERO SECTION  -->
+    <section>
 	<div class="site-hero_2">
 		<div class="page-title">
 			<div class="big-title montserrat-text uppercase">Business Cards</div>
 			<div class="small-title montserrat-text uppercase">Various Clients</div>
 		</div>
 	</div>
+    </section>
 
-
     
     
     
@@ -220,26 +266,25 @@
     
     
     
-    
-    
-    
+ 
 
     
     <section> 
         
-		<div class="container">
+		<div class="container1">
         <div class="photo-gallery">
     <div class="conatiner">
 <div class="wrap photos">
       
-<div class="item box one-prfm wow fadeInUp">
+<div class="item box one-prfm wow fadeInUp poster1">
       <div class="top-tape"></div>
     <a href="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/2021PRFM-Flyer.png" data-lightbox="photos">  <div class="top-tape"></div><img class="img-fluid" src="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/2021PRFM-Flyer.png"></a>
 </div>
        
 <div class="item box one-blkstnburlq wow fadeInUp poster1">
-     <div class="tape-section"></div>
+  <div class="tape-section"></div>
     <a href="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/blackstone-burlesque-poster.png" data-lightbox="photos"><img class="img-fluid" src="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/blackstone-burlesque-poster.png"></a>
+    <div class="tape-section"></div>
 </div>
 <div class="item box one-glitterghoul wow fadeInUp poster1">
  <div class="tape-section"></div>
@@ -247,50 +292,66 @@
      <div class="tape-section"></div>
 </div>
 <div class="item box two-twg1 wow fadeInUp poster1">
-    <a href="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/twg-flyergif.gif" data-lightbox="photos"><img class="img-fluid" src="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/twg-flyergif.gif"></a>
+     <div class="tape-section"></div>
+    <a href="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/twg-flyergif.gif" data-lightbox="photos"> <img class="img-fluid" src="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/twg-flyergif.gif"> <div class="tape-section"></div></a>
+     <div class="tape-section"></div>
 </div>
 <div class="item box three-twg2 wow fadeInUp poster1">
-    <a href="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/TWG-MarchFlyer.jpg" data-lightbox="photos"><img class="img-fluid" src="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/TWG-MarchFlyer.jpg"></a>
+      <div class="top-tape"></div>
+    <a href="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/TWG-MarchFlyer.jpg" data-lightbox="photos">  <div class="top-tape"></div><img class="img-fluid" src="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/TWG-MarchFlyer.jpg"></a>
 </div>
 <div class="item box five-ccgb wow fadeInUp poster1">
-    <a href="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/CCGB-Flyer-RGB.png" data-lightbox="photos"><img class="img-fluid" src="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/CCGB-Flyer-RGB.png"></a>
+     <div class="tape-section"></div>
+    <a href="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/CCGB-Flyer-RGB.png" data-lightbox="photos"> <div class="tape-section"></div><img class="img-fluid" src="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/CCGB-Flyer-RGB.png"> <div class="tape-section"></div></a> <div class="tape-section"></div>
 </div>
 <div class="item box six-hth1 wow fadeInUp poster1">
-    <a href="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/HTH_halloween2017_poster_02.png" data-lightbox="photos"><img class="img-fluid" src="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/HTH_halloween2017_poster_02.png"></a>
+     <div class="tape-section"></div>
+    <a href="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/HTH_halloween2017_poster_02.png" data-lightbox="photos"> <div class="tape-section"></div><img class="img-fluid" src="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/HTH_halloween2017_poster_02.png"> <div class="tape-section"></div></a> <div class="tape-section"></div>
 </div>
-<div class="item box seven-hth2 wow fadeInUp">
-    <a href="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/HTH-xmasposter-2-final.png" data-lightbox="photos"><img class="img-fluid" src="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/HTH-xmasposter-2-final.png"></a>
+<div class="item box seven-hth2 wow fadeInUp poster1">
+     <div class="tape-section"></div>
+    <a href="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/HTH-xmasposter-2-final.png" data-lightbox="photos"> <div class="tape-section"></div><img class="img-fluid" src="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/HTH-xmasposter-2-final.png"> <div class="tape-section"></div></a> <div class="tape-section"></div>
 </div>
-<div class="item box eight-hth3 wow fadeInUp">
-    <a href="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/HTH-xmas-flyers-1-final.png" data-lightbox="photos"><img class="img-fluid" src="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/HTH-xmas-flyers-1-final.png"></a>
+<div class="item box eight-hth3 wow fadeInUp poster1">
+     <div class="tape-section"></div>
+    <a href="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/HTH-xmas-flyers-1-final.png" data-lightbox="photos"> <div class="tape-section"></div><img class="img-fluid" src="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/HTH-xmas-flyers-1-final.png"> <div class="tape-section"></div></a> <div class="tape-section"></div>
 </div>
-<div class="item box nine-tara wow fadeInUp">
-    <a href="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/HTH-xmas-flyers-1-final.png" data-lightbox="photos"><img class="img-fluid" src="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/HTH-xmas-flyers-1-final.png"></a>
+<div class="item box nine-tara wow fadeInUp poster1">
+     <div class="tape-section"></div>
+    <a href="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/tara-poster-rgb.png" data-lightbox="photos"> <div class="tape-section"></div><img class="img-fluid" src="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/tara-poster-rgb.png"> <div class="tape-section"></div></a> <div class="tape-section"></div>
 </div>
-<div class="item box ten-fracture wow fadeInUp">
-    <a href="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/Fracture-poster-rgb.png" data-lightbox="photos"><img class="img-fluid" src="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/Fracture-poster-rgb.png"></a>
+<div class="item box ten-fracture wow fadeInUp poster1">
+     <div class="tape-section"></div>
+    <a href="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/Fracture-poster-rgb.png" data-lightbox="photos"> <div class="tape-section"></div><img class="img-fluid" src="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/Fracture-poster-rgb.png"> <div class="tape-section"></div></a> <div class="tape-section"></div>
 </div>
-<div class="item box eleven-rwbposter wow fadeInUp">
-    <a href="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/rewritebeautiful-flyer1.jpg" data-lightbox="photos"><img class="img-fluid" src="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/rewritebeautiful-flyer1.jpg"></a>
+<div class="item box eleven-rwbposter wow fadeInUp poster1">
+     <div class="tape-section"></div>
+    <a href="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/rewritebeautiful-flyer1.jpg" data-lightbox="photos"> <div class="tape-section"></div><img class="img-fluid" src="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/rewritebeautiful-flyer1.jpg"> <div class="tape-section"></div></a> <div class="tape-section"></div>
 </div>
-<div class="item box thirteen-fob wow fadeInUp">
-    <a href="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/FOB_MusicPoster-rgb.png" data-lightbox="photos"><img class="img-fluid" src="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/FOB_MusicPoster-rgb.png"></a>
+<div class="item box thirteen-fob wow fadeInUp poster1">
+     <div class="tape-section"></div>
+    <a href="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/FOB_MusicPoster-rgb.png" data-lightbox="photos"> <div class="tape-section"></div><img class="img-fluid" src="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/FOB_MusicPoster-rgb.png"> <div class="tape-section"></div></a> <div class="tape-section"></div>
 </div>
-<div class="item box ftn-magenta wow fadeInUp">
-    <a href="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/--collegework/magentaad.png" data-lightbox="photos"><img class="img-fluid" src="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/--collegework/magentaad.png"></a>
+<div class="item box ftn-magenta wow fadeInUp poster1">
+     <div class="tape-section"></div>
+    <a href="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/--collegework/magentaad.png" data-lightbox="photos"> <div class="tape-section"></div><img class="img-fluid" src="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/--collegework/magentaad.png"> <div class="tape-section"></div></a> <div class="tape-section"></div>
 </div>
-    <div class="item box ftn-jukebox wow fadeInUp">
-    <a href="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/--collegework/Miller_Mae_3.jpg" data-lightbox="photos"><img class="img-fluid" src="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/--collegework/Miller_Mae_3.jpg"></a>
+    <div class="item box ftn-jukebox wow fadeInUp poster1">
+         <div class="tape-section"></div>
+    <a href="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/--collegework/Miller_Mae_3.jpg" data-lightbox="photos"> <div class="tape-section"></div><img class="img-fluid" src="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/--collegework/Miller_Mae_3.jpg"> <div class="tape-section"></div></a> <div class="tape-section"></div>
 </div>
         
-    <div class="item box ftn-jukebox wow fadeInUp">
-    <a href="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/BlueBarn-Poster-0507.png" data-lightbox="photos"><img class="img-fluid" src="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/BlueBarn-Poster-0507.png"></a>
+    <div class="item box ftn-jukebox wow fadeInUp poster1">
+         <div class="tape-section"></div>
+    <a href="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/BlueBarn-Poster-0507.png" data-lightbox="photos"> <div class="tape-section"></div><img class="img-fluid" src="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/BlueBarn-Poster-0507.png"> <div class="tape-section"></div></a> <div class="tape-section"></div>
 </div>
-      <div class="item box ftn-jukebox wow fadeInUp">
-    <a href="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/BlueBarn-Posters.gif" data-lightbox="photos"><img class="img-fluid" src="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/BlueBarn-Posters.gif"></a>
+      <div class="item box ftn-jukebox wow fadeInUp poster1">
+           <div class="tape-section"></div>
+    <a href="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/BlueBarn-Posters.gif" data-lightbox="photos"> <div class="tape-section"></div><img class="img-fluid" src="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/BlueBarn-Posters.gif"> <div class="tape-section"></div></a> <div class="tape-section"></div>
 </div>
- <div class="item box ftn-jukebox wow fadeInUp">
-    <a href="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/jumpline-magazines.gif" data-lightbox="photos"><img class="img-fluid" src="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/jumpline-magazines.gif"></a>
+ <div class="item box ftn-jukebox wow fadeInUp poster1">
+      <div class="tape-section"></div>
+    <a href="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/jumpline-magazines.gif" data-lightbox="photos"> <div class="tape-section"></div><img class="img-fluid" src="https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/%2Bposters/jumpline-magazines.gif"> <div class="tape-section"></div></a> <div class="tape-section"></div>
 </div>
     
     
