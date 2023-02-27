@@ -5,7 +5,8 @@
 
 body,
 #email-body {
-    margin-top: 50px;
+/*margin-top: 50px;
+    overflow: scroll;*/
  
 }
 .tab-pane .list-group .glyphicon.glyphicon-star, span.glyphicon.glyphicon-inbox, span.glyphicon.glyphicon-user, span.glyphicon.glyphicon-tags, span.glyphicon.glyphicon-plus.no-margin, .nav-tabs>li>a, .tab-pane .list-group .glyphicon {color:#663366;}
@@ -15,7 +16,8 @@ a.email-btn.btn-danger.btn-sm.btn-block{background-color: #bda6cd;}
 a.list-group-item:hover {background-color: rgba(189,166,205, 0.3);}
 
 #email-body {
-
+margin-top: -50px;
+    overflow: scroll;
 }
 #home > div > a > div > label {
     /* border: 2px solid; */
