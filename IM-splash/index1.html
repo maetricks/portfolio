@@ -1,0 +1,202 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      
+
+    <title>Impact Merchandising</title>
+      <style>
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+          .container {
+	width: 100vw;
+	height: 100vh;
+}
+.row {
+	height: 70%;
+	background-color: #bbb;
+    position: relative;
+    top:15%;
+     border-radius: 4px;
+}
+.col {
+	padding: 15px;
+	text-align: center;
+	background-color: #999;
+}
+          body{
+              background-image:url("BkgSkull-screen.jpg");
+              font-family: 'Roboto', sans-serif;}
+          
+          .splash-logo{
+          }
+          .container{
+              width:66%;
+           height:auto;
+  -moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6);
+ border-radius: 4px;
+ position: relative;
+              top:15%;
+  text-align: center;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+  transition: box-shadow .3s ease;}
+          
+          .btn-ws{}
+          .btn-rtl{}
+          
+       img {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 2s; 
+
+  /* When the animation is finished, start again */
+  animation-iteration-count:1;
+}
+
+          
+          @keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+          
+          
+          
+/* Base Button Style */
+.btn {
+  position: relative;
+  display:block;
+  width: 250px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transform-style: flat;
+  transition: all 250ms ease-out;
+}
+          .btn:before, .btn:after {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  transition: all 250ms ease-out;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #f53f43;
+    border-color: #f53f43;
+}
+        a:hover {
+    color: #f53f43;
+    text-decoration: underline;
+}
+/* Paper effect – slightly raised off background */
+.paper {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(128, 128, 128, 0.1) inset;
+  border-color: #dedede;
+}
+
+          
+          
+@media only screen and (max-width : 1200px) {
+
+                     .btn {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+
+}
+    p {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    justify-content: unset;
+}
+   
+}
+
+@media only screen and (max-width : 979px) {
+    .splash-logo img{width:100% !important;}
+
+    
+    .btn {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+
+}
+    p {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    justify-content: unset;
+}
+    
+          }
+
+@media only screen and (max-width : 767px) {
+
+    .btn{display: block !important;
+    margin: 20px auto;}
+    p{display:block;}
+    .splash-logo img{width:80% !important;}
+}
+
+@media only screen and (max-width : 480px) {
+
+    .btn{display: block !important;}
+    .splash-logo img{width:100% !important;}
+}
+
+@media only screen and (max-width : 320px) {
+
+    .container{width:66%;margin:0;}
+     .splash-logo img{width:100% !important;}
+    
+}
+   
+
+
+
+
+
+          
+</style>
+  </head>
+<body class="text-center">
+    
+  <div class="container">
+	<div class="row justify-content-center">
+		
+        <div class="col-md-8 col-md-offset-2 text-center align-self-center">
+						<div class="intro">
+                            <div class="splash-logo">
+                            <img src="impact-circle-blk.png"style="width:80%;margin-bottom:1em;"></div>
+							
+							
+							<p><a href="#" class="btn btn-primary btn-outline btn-md btn-ws paper">Wholesale</a> <a href="#" class="btn btn-primary btn-outline btn-md btn-rtl paper">Retail</a></p>
+						</div>
+      </div>
+       
+	</div>
+    </body>
+
+</html>
