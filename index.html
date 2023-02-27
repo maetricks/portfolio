@@ -9,6 +9,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/maefavicon.png">
+     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <meta name="author" content="mae">
     <meta name="description" content="words words words">
     <!-- STYLES -->
@@ -25,7 +26,19 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,800,900,100,700italic,500italic,400italic,800italic,300italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
-<style>.svg-wrap {
+   
+ 
+    
+    
+<style>
+    .container-bar {
+    display: flex;
+    /* border: 2px solid; */
+    justify-content: center;
+}
+    
+    
+    .svg-wrap {
   position: absolute;
   width: 0px;
   height: 0px;
@@ -119,7 +132,7 @@ aside a::after {
                         <li><a href="" class="animsition-link">Portfolio</a>
                             <ul class="second-level">
                                 <li><a href="single-project-foursails.html" class="animsition-link" style="font-family: 'Oxygen', sans-serif; font-weight:300;">Four Sails</a></li>
-                                <!--<li><a href="single-project-campagin3.html" class="animsition-link" style="font-family: 'Oxygen', sans-serif; font-weight:300;">The Weekly Geekly</a></li>-->
+                                <li><a href="single-project-campagin3.html" class="animsition-link" style="font-family: 'Oxygen', sans-serif; font-weight:300;display:none;">The Weekly Geekly</a></li>
                                 <li><a href="/about-businesscards.html" class="animsition-link" style="font-family: 'Oxygen', sans-serif; font-weight:300;">Business Cards</a></li>
                                 <li><a href="/about-posters-lightbox.html" class="animsition-link" style="font-family: 'Oxygen', sans-serif; font-weight:300;">Posters</a></li>
                             </ul>
@@ -641,19 +654,131 @@ font-family: 'Raleway', sans-serif; font-weight: 800; font-size:50px; text-shado
                 </div>
             </div>
             <div class="col-md-5 col-sm-12 services-right wow fadeInUp" data-wow-delay=".1s">
-                <div class="row"> <img src="assets/img/serv.svg" alt="coffeequote" style=""> </div>
+            <div class="row"> <img src="assets/img/serv.svg" alt="coffeequote" style=""> </div>
+           
+
+    
+
             </div>
         </div></section>
+
+
+
+
+<!-----PROJECT BAR---->
+ <section class="green-section project-bar" style="padding:50px 0">
+        <div class="container-bar">
+<nav class="gooeyNav">
+  <span class="gooeyTrigger"></span>
+  <a href="/email-newsletters.html"><span>Email Newsletters</span></a>
+  <a href="/portfolio-socialmedia.html" class="firstitem"><span>Social Media</span></a>
+  <a href="/about-posters-lightbox.html"><span>Posters</span></a>
+  <a href="/about-businesscards.html"><span>Business Cards</span></a>
+</nav>
+
+<svg style="display: none">
+  <defs>
+    <filter id="gooSVG">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+      <feBlend in="SourceGraphic" in2="goo" />
+    </filter>
+  </defs>
+</svg>
+     </div>
+</section>
+<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+  
+   <script id="rendered-js" >
+const link = document.querySelectorAll(".gooeyNav > a");
+const trigger = document.querySelector(".gooeyTrigger");
+
+// Nav link loop
+link.forEach((el) => {
+  el.addEventListener("mouseover", function () {
+    resetActive();
+    resetHover();
+    this.classList.add("active");
+    moveTrigger(this);
+  });
+
+  el.addEventListener("focus", function (item) {
+    if (item.target.classList.contains("focus")) {
+      resetHover();
+      return;
+    }
+    setTimeout(() => {
+      resetHover();
+      this.classList.add("hover");
+      trigger.classList.add("hover");
+      moveTrigger(this);
+    }, 200);
+    console.log(item.target);
+  });
+
+  el.addEventListener("mouseleave", () => {
+    setTimeout(() => {
+      resetHover();
+    }, 200);
+  });
+});
+
+// Reset active class
+function resetActive() {
+  link.forEach(el => el.classList.remove("active", "firstitem"));
+}
+// Reset hover class
+function resetHover() {
+  trigger.classList.remove("hover");
+  link.forEach(el => {
+    el.classList.remove("hover");
+    (el.classList.contains("active") || el.classList.contains("firstitem")) &&
+    moveTrigger(el);
+  });
+}
+
+// Move gooey
+function moveTrigger(link) {
+  const linkPos = link.offsetLeft;
+  const linkWidth = link.offsetWidth;
+  const linkHeight = link.offsetHeight;
+
+  setTimeout(() => {
+    trigger.style.height = `${link.offsetHeight}px`;
+  }, 200);
+
+  trigger.classList.add("move");
+  trigger.style.height = "0";
+  trigger.style.left = `${linkPos}px`;
+  trigger.style.width = `${linkWidth + 1}px`;
+}
+
+// place gooey on reload website
+(function startActive() {
+  link.forEach(el => {
+    const elPos = el.offsetLeft;
+    const elWidth = el.offsetWidth;
+    if (el.classList.contains("firstitem")) {
+      trigger.style.left = `${elPos}px`;
+      trigger.style.width = `${elWidth + 1}px`;
+    }
+  });
+})();
+//# sourceURL=pen.js
+    </script>
+
+
 <!-- PORTFOLIO -->
 <section class="portfolio">
     <div class="container">
-        <div class="row">
+        <!--<div class="row">
             <div class="section-title" style=""> </div>
-        </div>
+        </div>-->
         <!-- categories  -->
         <div class="col-md-3">
             <div class="row categories-grid">
-                <div class="section-title" style="margin: 10px;"> <span class="montserrat-text uppercase service-title"><br></span></div>
+                <!--<div class="section-title" style="margin: 10px;"> <span class="montserrat-text uppercase service-title"><br></span></div>-->
                 <hr class="indexstyle">
                 <nav class="categories">
                     <ul class="portfolio_filter">
@@ -1469,13 +1594,13 @@ font-family: 'Raleway', sans-serif; font-weight: 800; font-size:50px; text-shado
     <section class="green-section wow fadeInUp" style="padding:50px 0">
         <div class="container">
             <div class="col-md-6 col-sm-12">
-                <div class="row"> <span class="white-text montserrat-text uppercase" style="font-size:30px;display:block; font-weight:700;">
+                <div class="row"> <span class="white-text quote montserrat-text uppercase" style="font-size:30px;display:block; font-weight:700;">
 						Need an ambitious designer?<br><p style="font-family: 'Oxygen', sans-serif; font-weight:400; color:#FFFFFF;"> let's work together!</p>
 					</span> <a href="assets/img/Mae_Miller_Resume_2016.pdf" target="_blank" class="btn white" style="margin-top:5px"><span style="margin-bottom:60px; padding-bottom:10px;">resume</span></a> </div>
             </div>
             <div class="col-md-6 col-sm-12">
                 <div class="row">
-                    <div class="white-section" style="padding:20px"> <span class="montserrat-text uppercase" style="font-size:24px">Let's Get Connected</span>
+                    <div class="white-section note" style="padding:20px"> <span class="montserrat-text uppercase" style="font-size:24px">Let's Get Connected</span>
                         <p> What the helvetica, drop your email below... </p>
                         <form action="//formspree.io/maemillergraphics@gmail.com" method="post">
                             <div class="input_1">
@@ -1520,7 +1645,7 @@ font-family: 'Raleway', sans-serif; font-weight: 800; font-size:50px; text-shado
             </div>
             <div class="col-md-4 col-sm-12" style="text-align:right">
                 <div class="row">
-                    <div class="uppercase gray-text"> &copy;2016. all rights reserved.
+                    <div class="uppercase gray-text"> &copy;2016 - 2022. all rights reserved.
                         <br>Student and Freelance Design Work. </div>
                     <ul class="social-icons" style="margin-top:30px;float:right">
                         <li><a href="https://twitter.com/Maetrickz"><i class="fa fa-twitter"></i></a></li>
