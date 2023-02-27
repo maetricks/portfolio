@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'GEO';
+	src: url('geo-webfont.eot');
+	src: url('geo-webfont.eot?#iefix') format('embedded-opentype'),
+		url('geo-webfont.woff') format('woff'),
+		url('geo-webfont.ttf') format('truetype'),
+		url('geo-webfont.svg') format('svg');
+}
