@@ -1,0 +1,693 @@
+.nav-pills>li>a {
+    padding: 5px 10px;
+}
+#email-body > section > div > div:nth-child(3) > div.col-sm-3.col-md-2 > ul > li > a{padding: 5px 10px;}
+
+body,
+#email-body {
+    margin-top: 50px;
+ 
+}
+.tab-pane .list-group .glyphicon.glyphicon-star, span.glyphicon.glyphicon-inbox, span.glyphicon.glyphicon-user, span.glyphicon.glyphicon-tags, span.glyphicon.glyphicon-plus.no-margin, .nav-tabs>li>a, .tab-pane .list-group .glyphicon {color:#663366;}
+
+span.badge, button.email-btn.btn-primary.dropdown-toggle{background-color:#663366;}
+a.email-btn.btn-danger.btn-sm.btn-block{background-color: #bda6cd;}
+a.list-group-item:hover {background-color: rgba(189,166,205, 0.3);}
+
+#email-body {
+
+}
+#home > div > a > div > label {
+    /* border: 2px solid; */
+    padding-top: 5px;
+}
+
+#email-body .email-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.email-btn.active.focus,
+.email-btn.active:focus,
+.email-btn.focus,
+.email-btn:active.focus,
+.email-btn:active:focus,
+.email-btn:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+.email-btn.focus,
+.email-btn:focus,
+.email-btn:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+.email-btn.active,
+.email-btn:active {
+    background-image: none;
+    outline: 0;
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+
+.email-btn.disabled,
+.email-btn[disabled],
+fieldset[disabled] .btn {
+    cursor: not-allowed;
+
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: .65;
+
+}
+
+a.email-btn.disabled,
+fieldset[disabled] a.email-btn {
+    pointer-events: none;
+}
+
+.email-btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc !important;
+}
+
+.email-btn-default.focus,
+.email-btn-default:focus {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #8c8c8c !important;
+}
+
+.email-btn-default:hover {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad !important;;
+}
+
+.email-btn-default.active,
+.email-btn-default:active,
+.open>.dropdown-toggle.email-btn-default {
+    color: #333;
+    background-color: #e6e6e6;
+    border-color: #adadad !important;
+}
+
+.email-btn-default.active.focus,
+.email-btn-default.active:focus,
+.email-btn-default.active:hover,
+.email-btn-default:active.focus,
+.email-btn-default:active:focus,
+.email-btn-default:active:hover,
+.open>.dropdown-toggle.email-btn-default.focus,
+.open>.dropdown-toggle.email-btn-default:focus,
+.open>.dropdown-toggle.email-btn-default:hover {
+    color: #333;
+    background-color: #d4d4d4;
+    border-color: #8c8c8c !important;
+}
+
+.email-btn-default.active,
+.email-btn-default:active,
+.open>.dropdown-toggle.email-btn-default {
+    background-image: none;
+}
+
+.email-btn-default.disabled.focus,
+.email-btn-default.disabled:focus,
+.email-btn-default.disabled:hover,
+.email-btn-default[disabled].focus,
+.email-btn-default[disabled]:focus,
+.email-btn-default[disabled]:hover,
+fieldset[disabled] .email-btn-default.focus,
+fieldset[disabled] .email-btn-default:focus,
+fieldset[disabled] .email-btn-default:hover {
+    background-color: #fff;
+    border-color: #ccc !important;
+}
+
+.email-btn-default .badge {
+    color: #fff;
+    background-color: #333;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.btn-primary.focus,
+.btn-primary:focus {
+    color: #fff;
+    background-color: #286090;
+    border-color: #122b40;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
+}
+
+.btn-primary.active,
+.btn-primary:active,
+.open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #286090;
+    border-color: #204d74;
+}
+
+.btn-primary.active.focus,
+.btn-primary.active:focus,
+.btn-primary.active:hover,
+.btn-primary:active.focus,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.open>.dropdown-toggle.btn-primary.focus,
+.open>.dropdown-toggle.btn-primary:focus,
+.open>.dropdown-toggle.btn-primary:hover {
+    color: #fff;
+    background-color: #204d74;
+    border-color: #122b40;
+}
+
+.btn-primary.active,
+.btn-primary:active,
+.open>.dropdown-toggle.btn-primary {
+    background-image: none;
+}
+
+.btn-primary.disabled.focus,
+.btn-primary.disabled:focus,
+.btn-primary.disabled:hover,
+.btn-primary[disabled].focus,
+.btn-primary[disabled]:focus,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary.focus,
+fieldset[disabled] .btn-primary:focus,
+fieldset[disabled] .btn-primary:hover {
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+.btn-primary .badge {
+    color: #337ab7;
+    background-color: #fff;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+.btn-success.focus,
+.btn-success:focus {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #255625;
+}
+
+.btn-success:hover {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439;
+}
+
+.btn-success.active,
+.btn-success:active,
+.open>.dropdown-toggle.btn-success {
+    color: #fff;
+    background-color: #449d44;
+    border-color: #398439;
+}
+
+.btn-success.active.focus,
+.btn-success.active:focus,
+.btn-success.active:hover,
+.btn-success:active.focus,
+.btn-success:active:focus,
+.btn-success:active:hover,
+.open>.dropdown-toggle.btn-success.focus,
+.open>.dropdown-toggle.btn-success:focus,
+.open>.dropdown-toggle.btn-success:hover {
+    color: #fff;
+    background-color: #398439;
+    border-color: #255625;
+}
+
+.btn-success.active,
+.btn-success:active,
+.open>.dropdown-toggle.btn-success {
+    background-image: none;
+}
+
+.btn-success.disabled.focus,
+.btn-success.disabled:focus,
+.btn-success.disabled:hover,
+.btn-success[disabled].focus,
+.btn-success[disabled]:focus,
+.btn-success[disabled]:hover,
+fieldset[disabled] .btn-success.focus,
+fieldset[disabled] .btn-success:focus,
+fieldset[disabled] .btn-success:hover {
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+.btn-success .badge {
+    color: #5cb85c;
+    background-color: #fff;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+
+.btn-info.focus,
+.btn-info:focus {
+    color: #fff;
+    background-color: #31b0d5;
+    border-color: #1b6d85
+}
+
+.btn-info:hover {
+    color: #fff;
+    background-color: #31b0d5;
+    border-color: #269abc;
+}
+
+.btn-info.active,
+.btn-info:active,
+.open>.dropdown-toggle.btn-info {
+    color: #fff;
+    background-color: #31b0d5;
+    border-color: #269abc;
+}
+
+.btn-info.active.focus,
+.btn-info.active:focus,
+.btn-info.active:hover,
+.btn-info:active.focus,
+.btn-info:active:focus,
+.btn-info:active:hover,
+.open>.dropdown-toggle.btn-info.focus,
+.open>.dropdown-toggle.btn-info:focus,
+.open>.dropdown-toggle.btn-info:hover {
+    color: #fff;
+    background-color: #269abc;
+    border-color: #1b6d85;
+}
+
+.btn-info.active,
+.btn-info:active,
+.open>.dropdown-toggle.btn-info {
+    background-image: none;
+}
+
+.btn-info.disabled.focus,
+.btn-info.disabled:focus,
+.btn-info.disabled:hover,
+.btn-info[disabled].focus,
+.btn-info[disabled]:focus,
+.btn-info[disabled]:hover,
+fieldset[disabled] .btn-info.focus,
+fieldset[disabled] .btn-info:focus,
+fieldset[disabled] .btn-info:hover {
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+
+.btn-info .badge {
+    color: #5bc0de;
+    background-color: #fff;
+}
+
+.btn-warning {
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+
+.btn-warning.focus,
+.btn-warning:focus {
+    color: #fff;
+    background-color: #ec971f;
+    border-color: #985f0d;
+}
+
+.btn-warning:hover {
+    color: #fff;
+    background-color: #ec971f;
+    border-color: #d58512;
+}
+
+.btn-warning.active,
+.btn-warning:active,
+.open>.dropdown-toggle.btn-warning {
+    color: #fff;
+    background-color: #ec971f;
+    border-color: #d58512;
+}
+
+.btn-warning.active.focus,
+.btn-warning.active:focus,
+.btn-warning.active:hover,
+.btn-warning:active.focus,
+.btn-warning:active:focus,
+.btn-warning:active:hover,
+.open>.dropdown-toggle.btn-warning.focus,
+.open>.dropdown-toggle.btn-warning:focus,
+.open>.dropdown-toggle.btn-warning:hover {
+    color: #fff;
+    background-color: #d58512;
+    border-color: #985f0d;
+}
+
+.btn-warning.active,
+.btn-warning:active,
+.open>.dropdown-toggle.btn-warning {
+    background-image: none;
+}
+
+.btn-warning.disabled.focus,
+.btn-warning.disabled:focus,
+.btn-warning.disabled:hover,
+.btn-warning[disabled].focus,
+.btn-warning[disabled]:focus,
+.btn-warning[disabled]:hover,
+fieldset[disabled] .btn-warning.focus,
+fieldset[disabled] .btn-warning:focus,
+fieldset[disabled] .btn-warning:hover {
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+
+.btn-warning .badge {
+    color: #f0ad4e;
+    background-color: #fff;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
+.btn-danger.focus,
+.btn-danger:focus {
+    color: #fff;
+    background-color: #c9302c;
+    border-color: #761c19;
+}
+
+.btn-danger:hover {
+    color: #fff;
+    background-color: #c9302c;
+    border-color: #ac2925;
+}
+
+.btn-danger.active,
+.btn-danger:active,
+.open>.dropdown-toggle.btn-danger {
+    color: #fff;
+    background-color: #c9302c;
+    border-color: #ac2925;
+}
+
+.btn-danger.active.focus,
+.btn-danger.active:focus,
+.btn-danger.active:hover,
+.btn-danger:active.focus,
+.btn-danger:active:focus,
+.btn-danger:active:hover,
+.open>.dropdown-toggle.btn-danger.focus,
+.open>.dropdown-toggle.btn-danger:focus,
+.open>.dropdown-toggle.btn-danger:hover {
+    color: #fff;
+    background-color: #ac2925;
+    border-color: #761c19;
+}
+
+.btn-danger.active,
+.btn-danger:active,
+.open>.dropdown-toggle.btn-danger {
+    background-image: none
+}
+
+.btn-danger.disabled.focus,
+.btn-danger.disabled:focus,
+.btn-danger.disabled:hover,
+.btn-danger[disabled].focus,
+.btn-danger[disabled]:focus,
+.btn-danger[disabled]:hover,
+fieldset[disabled] .btn-danger.focus,
+fieldset[disabled] .btn-danger:focus,
+fieldset[disabled] .btn-danger:hover {
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
+.btn-danger .badge {
+    color: #d9534f;
+    background-color: #fff
+}
+
+.btn-link {
+    font-weight: 400;
+    color: #337ab7;
+    border-radius: 0
+}
+
+.btn-link,
+.btn-link.active,
+.btn-link:active,
+.btn-link[disabled],
+fieldset[disabled] .btn-link {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.btn-link,
+.btn-link:active,
+.btn-link:focus,
+.btn-link:hover {
+    border-color: transparent
+}
+
+.btn-link:focus,
+.btn-link:hover {
+    color: #23527c;
+    text-decoration: underline;
+    background-color: transparent
+}
+
+.btn-link[disabled]:focus,
+.btn-link[disabled]:hover,
+fieldset[disabled] .btn-link:focus,
+fieldset[disabled] .btn-link:hover {
+    color: #777;
+    text-decoration: none
+}
+
+.btn-group-lg>.btn,
+.btn-lg {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px
+}
+
+.btn-group-sm>.btn,
+.btn-sm {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px
+}
+
+.btn-group-xs>.btn,
+.btn-xs {
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px
+}
+
+.btn-block {
+    display: block;
+    width: 100%
+}
+
+.btn-block+.btn-block {
+    margin-top: 5px
+}
+
+input[type=button].btn-block,
+input[type=reset].btn-block,
+input[type=submit].btn-block {
+    width: 100%
+}
+
+.nav-tabs .glyphicon:not(.no-margin) {
+    margin-right: 10px;
+}
+
+.tab-pane .list-group-item:first-child {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.tab-pane .list-group-item:last-child {
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.tab-pane .list-group .checkbox {
+    display: inline-block;
+    margin: 0px;
+}
+
+.tab-pane .list-group input[type="checkbox"] {
+    margin-top: 2px;
+}
+
+.tab-pane .list-group .glyphicon {
+    margin-right: 5px;
+}
+
+.tab-pane .list-group .glyphicon:hover {
+    color: #FFBC00;
+}
+
+a.list-group-item.read {
+    color: #222;
+    background-color: #F3F3F3;
+}
+
+hr.hr1 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+hr.hr2 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.nav-pills>li>a {
+    padding: 5px 10px !important;
+    color: #337ab7;
+}
+
+#case {
+    position: relative;
+}
+
+.glyphicon-user:before {
+    content: "\e008";
+}
+
+.email-btn-group,
+.email-btn-group-vertical {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.email-btn-group-vertical>.btn,
+.email-btn-group>.btn {
+    position: relative;
+    float: left
+}
+
+.email-btn-group-sm>.btn,
+.email-btn-sm {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px
+}
+
+a.emailstyle {
+    color: #60606e;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+a.link {
+    position: relative;
+}
+
+
+/*footer link underbar*/
+
+a.link:after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 3px;
+    height: 3px;
+    background-color: #bda6cd;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+a .emailstyle:hover,
+a .emailstyle:focus {
+    color: #60606e;
+    text-decoration: none;
+}
+
+a .emailstyle:hover:after {
+    width: 50%;
+}
+
+.email-container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+@media (min-width:768px) {
+    .email-container {
+        width: 750px
+    }
+}
+
+@media (min-width:992px) {
+    .email-container {
+        width: 970px
+    }
+}
+
+@media (min-width:1200px) {
+    .email-container {
+        width: 1170px
+    }
+}
