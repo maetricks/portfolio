@@ -142,7 +142,130 @@
     
     </section>-->
     
-    
+
+
+<!-----PROJECT BAR---->
+ <section class="green-section project-bar" style="padding:50px 0">
+        <div class="container-bar">
+<nav class="gooeyNav">
+  <span class="gooeyTrigger"></span>
+  <a href="/email-newsletters.html"><span>Email Newsletters</span></a>
+  <a href="/portfolio-socialmedia.html" class="firstitem"><span>Social Media</span></a>
+  <a href="/about-posters-lightbox.html"><span>Posters</span></a>
+  <a href="/about-businesscards.html"><span>Business Cards</span></a>
+</nav>
+
+<svg style="display: none">
+  <defs>
+    <filter id="gooSVG">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+      <feBlend in="SourceGraphic" in2="goo" />
+    </filter>
+  </defs>
+</svg>
+     </div>
+</section>
+<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
+
+  
+   <script id="rendered-js" >
+const link = document.querySelectorAll(".gooeyNav > a");
+const trigger = document.querySelector(".gooeyTrigger");
+
+// Nav link loop
+link.forEach((el) => {
+  el.addEventListener("mouseover", function () {
+    resetActive();
+    resetHover();
+    this.classList.add("active");
+    moveTrigger(this);
+  });
+
+  el.addEventListener("focus", function (item) {
+    if (item.target.classList.contains("focus")) {
+      resetHover();
+      return;
+    }
+    setTimeout(() => {
+      resetHover();
+      this.classList.add("hover");
+      trigger.classList.add("hover");
+      moveTrigger(this);
+    }, 200);
+    console.log(item.target);
+  });
+
+  el.addEventListener("mouseleave", () => {
+    setTimeout(() => {
+      resetHover();
+    }, 200);
+  });
+});
+
+// Reset active class
+function resetActive() {
+  link.forEach(el => el.classList.remove("active", "firstitem"));
+}
+// Reset hover class
+function resetHover() {
+  trigger.classList.remove("hover");
+  link.forEach(el => {
+    el.classList.remove("hover");
+    (el.classList.contains("active") || el.classList.contains("firstitem")) &&
+    moveTrigger(el);
+  });
+}
+
+// Move gooey
+function moveTrigger(link) {
+  const linkPos = link.offsetLeft;
+  const linkWidth = link.offsetWidth;
+  const linkHeight = link.offsetHeight;
+
+  setTimeout(() => {
+    trigger.style.height = `${link.offsetHeight}px`;
+  }, 200);
+
+  trigger.classList.add("move");
+  trigger.style.height = "0";
+  trigger.style.left = `${linkPos}px`;
+  trigger.style.width = `${linkWidth + 1}px`;
+}
+
+// place gooey on reload website
+(function startActive() {
+  link.forEach(el => {
+    const elPos = el.offsetLeft;
+    const elWidth = el.offsetWidth;
+    if (el.classList.contains("firstitem")) {
+      trigger.style.left = `${elPos}px`;
+      trigger.style.width = `${elWidth + 1}px`;
+    }
+  });
+})();
+//# sourceURL=pen.js
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
     
 	<section>
 		<div class="container2">
@@ -155,6 +278,37 @@
     <button class="tab is-active" role="tab" aria-selected="true" aria-controls="tab1-tab" id="tab1">Drastic Plastic Clothing</button>
     <button class="tab" role="tab" aria-selected="false" aria-controls="tab2-tab" id="tab2" tabindex="-1">Drastic Plastic Records</button>
 		<button class="tab" role="tab" aria-selected="false" aria-controls="tab3-tab" id="tab3" tabindex="-1">Other</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 		
 		 
 	</div>
