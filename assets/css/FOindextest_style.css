@@ -12,7 +12,9 @@ html,body{height:100%;}
 background-image:("https://patternico.com/#QZVdvBCbxLplCsEq");}
 .Keyhole{
 margin-top: 5%;
-border:2px solid yellow;}
+    width: auto;
+    /* border: 2px solid yellow; */
+    height: 85%;
 .paralax{
     background-attachment: fixed;
     background-position: center;
