@@ -1,3 +1,4 @@
+@@ -1,305 +1,305 @@
 html,body{height:100%;}
 .relative{position:relative;}
 .max-height{height:100%;}
@@ -13,7 +14,8 @@ background-image:("https://patternico.com/#QZVdvBCbxLplCsEq");}
 .Keyhole{
 margin-top: 5%;
     width: auto;
-   border:2px solid yellow;
+    /* border: 2px solid yellow; */
+   
     height: 85%;
 .paralax{
     background-attachment: fixed;
@@ -27,7 +29,7 @@ margin-top: 5%;
   background-image:url("https://png.pngtree.com/thumb_back/fw800/background/20231107/pngtree-vibrant-red-leather-texture-a-striking-visual-and-textural-delight-image_13778447.png");
   color: darkgrey;
   height:150px;
-  
+
   position:relative;
   margin-top:50px;
   margin-bottom:50px;
@@ -40,7 +42,7 @@ margin-top: 5%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
+
   /*FONT DESIGN*/
   letter-spacing: -3px;
   font-family: 'Raleway', sans-serif;
@@ -51,13 +53,14 @@ margin-top: 5%;
 
 /* --- HOME --- */
 .home{
- 
+
   height:550px;
   color:white;
   box-shadow:0 0 15px grey;
   margin-bottom:0;
+  background-image:url("https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/forbidden/forbidden-omaha-fabric.jpeg");
   background-image:url("https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/forbidden/FO-vin-background.png");
-  
+
 }
 .home a {color:white;}
 
@@ -69,7 +72,7 @@ margin-top: 5%;
     transform: translate(-50%, -50%);
 }
 #homeH1 h1{
-    
+
   	letter-spacing: 1px;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
@@ -78,7 +81,7 @@ margin-top: 5%;
 	  line-height: .75;
 	  margin:25px;
     opacity:0;
-  
+
   /*ANIMATION SETTING*/
     animation-name:spreadText;
     animation-duration:4s;
@@ -129,7 +132,7 @@ img{width:100%;}
 /* --- ABOUT SECTION --- */
 #About{
   margin-top:50px;
-  
+
 }
 .Me-tag{
   font-size:13em;
@@ -139,7 +142,7 @@ img{width:100%;}
 }
 .Me-tag svg {
 	width: 250px; height: 250px;
-  
+
 }
 
 .Me-tag text { fill: url(#forest); }
@@ -218,7 +221,7 @@ form{margin-bottom:20px;}
   box-shadow:0 0 5px grey;
   overflow:hidden;
   color:white;
-  
+
 }
 .card img{
   border-radius:0;
@@ -257,7 +260,7 @@ footer{
     padding-left:5px;
     padding-right:5px;
   }
-  
+
   .showcase-1{
     background-image:url("https://images.pexels.com/photos/415314/pexels-photo-415314.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   }
@@ -303,4 +306,3 @@ footer{
         background-attachment: scroll;
     }
 }
-
