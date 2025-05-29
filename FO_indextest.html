@@ -170,7 +170,52 @@
     </div>
   </div>
   </footer>
-  
+   <!-- SCRIPTS -->
+<script type="text/javascript" src="assets/js/FOindextest_script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flexslider/2.7.2/jquery.flexslider-min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.6.0/js/jquery.animsition.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script type="text/javascript" src="assets/js/main.js"></script>
+<script type="text/javascript" charset="utf-8">
+    $(window).load(function () {
+        new WOW().init();
+        // initialise flexslider
+        $('.site-hero').flexslider({
+            animation: "fade"
+            , directionNav: false
+            , controlNav: false
+            , keyboardNav: true
+            , slideToStart: 0
+            , animationLoop: true
+            , pauseOnHover: false
+            , slideshowSpeed: 4000
+        , });
+        // initialize isotope
+        var $container = $('.portfolio_container');
+        $container.isotope({
+            filter: '*'
+        , });
+        $('.portfolio_filter a').click(function () {
+            $('.portfolio_filter .active').removeClass('active');
+            $(this).addClass('active');
+            var selector = $(this).attr('data-filter');
+            $container.isotope({
+                filter: selector
+                , animationOptions: {
+                    duration: 500
+                    , animationEngine: "jquery"
+                }
+            });
+            return false;
+        });
+    });
+</script>
 </body>
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
