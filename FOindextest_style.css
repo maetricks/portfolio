@@ -51,7 +51,7 @@ height:86%;}
   color:white;
   box-shadow:0 0 15px grey;
   margin-bottom:0;
-  background-image:url("https://maemiller-websitemedia.s3.us-east-2.amazonaws.com/forbidden/forbidden-omaha-fabric.jpeg");
+  background-image:url("https://f0rbidd3n.s3.us-east-1.amazonaws.com/FOimg/FO-vin-background.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIA2IQMO3ZWY4F65KY5%2F20250529%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250529T211828Z&X-Amz-Expires=300&X-Amz-Security-Token=IQoJb3JpZ2luX2VjEM7%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEaCXVzLWVhc3QtMSJIMEYCIQDmV0WHHQ37tGthTjIrBHDE2JXoxTCX6AdspCzCF9nrUwIhAKtdCUNkRfIgnC7nMye7KpsVp12YbapvMlJ0UuMjVqYXKqYCCJb%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FwEQBBoMNzA1NDc0NTE4NjM3IgzxgDEtaICXQ9IxG0oq%2BgGqDmPYxrh2KrNBnvSxOrBdmQBl0m4L3wsRKPQgEjpMGEIW5FZmgIxKDxjC96bvq8fw4UUI70cV%2Beu21azesTcxbDgVoqn6CEzqJzRDbZOmHzAyExfGldWjPZbkZvcm3NKas8fxCmvrBQvCvxb5wAE2rP2JV3OoHkSni4wWpXqeagRu6WBgSCBsa4UInIbeHtOXURxUfCfLKvm7nH9Uj3MTwnRqfTg5JfueUdmZfBoWVmK5mp%2BNAS28zcmx4S86AU6zovWJfMc8bDTa0lOdtT5%2FCWyUb2b%2BMvbDV0AvHqSz5X%2FgvUWx%2FkppjC6ETxNfOyN1zMD%2BSJOrv9wUMNv34sEGOt4BOA2PbAYlwztCvLizazWlri7pGzpxwcxrCuUlW21bDsD3H2W53%2BCbMhsOFyj9wpg%2BbNwA7XTprrFgW70co0OX8a82Ed2HWBq1OkM4h7q%2FdbZJRDEMXA%2Bu4WCcEcJod%2FpZN5tYgskTwDk9qp3i2%2FzOJP8aJ4w%2Fm5OmM3w2mrcwm0QY%2FbbZYN4nqU7D%2FpXoJm6%2FINfPkQBI%2FK67O3NZ9oL35eFAyVj6N06mqTFmluXi3A79%2FRxP4emcLehnhLHAUKzGlpCOW7gkQ3vnz%2FdhmGgEF%2BxjWkyCz6%2FCptWoDGXv&X-Amz-Signature=bcd6a74971199b3ac82c66118cc5ffaecec7553e93a577ee6f844200642dfa5e&X-Amz-SignedHeaders=host&response-content-disposition=inline");
   
 }
 .home a {color:white;}
@@ -254,7 +254,7 @@ footer{
   }
   
   .showcase-1{
-    background-image:url("https://res.cloudinary.com/crakerss/image/upload/q_auto:eco/v1502989950/FCC/FCC6.png");
+    background-image:url("https://images.pexels.com/photos/415314/pexels-photo-415314.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   }
   .SC div{
     background:rgba(100,100,100,0.3);
@@ -264,11 +264,11 @@ footer{
     background:rgba(100,100,100,0);
   }
   .showcase-2{
-    background-image:url("https://res.cloudinary.com/crakerss/image/upload/q_auto:eco/v1503012638/FCC_POMODORO_L.png");
+    background-image:url("https://images.pexels.com/photos/922511/pexels-photo-922511.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   }
 
   .showcase-3{
-    background-image:url("https://res.cloudinary.com/crakerss/image/upload/q_auto:eco/c_crop,g_center,h_1547,w_1632,x_0/v1509109795/CodePen_FCC_Calculator_alternate_design.png");
+    background-image:url("assets/img/FO_img3.png");
   }
   .SC div>span{
     padding:25px;
