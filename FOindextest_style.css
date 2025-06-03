@@ -51,7 +51,7 @@ height:86%;}
   color:white;
   box-shadow:0 0 15px grey;
   margin-bottom:0;
-  background-image:url("/FO-vin-background.png");
+  background-image:url("./FO-vin-background.png");
 
 }
 .home a {color:white;}
